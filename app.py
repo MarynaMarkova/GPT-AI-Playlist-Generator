@@ -6,7 +6,7 @@ import json
 
 import openai
 import spotipy
-from dotenv import dotenv_values, load_dotenv
+from dotenv import load_dotenv
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -23,7 +23,7 @@ def main():
     parser.add_argument(
         "-envfile",
         type=str,
-        default=".    env",
+        default=".env",
         required=False,
         help='A dotenv file with your environment variables: "SPOTIFY_CLIENT_ID", "SPOTIFY_CLIENT_SECRET", "OPENAI_API_KEY" ',
     )
